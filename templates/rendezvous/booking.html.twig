@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservation de rendez-vous{% endblock %}
+
+{% block body %}
+    <h1>Réservez votre rendez-vous</h1>
+    {{ form_start(form, {'method': 'POST'}) }}
+        {{ form_row(form.patientName) }}
+        {{ form_row(form.date) }}
+        {{ form_row(form.status) }}
+        <button class="btn btn-primary">Réserver</button>
+    {{ form_end(form) }}
+{% endblock %}

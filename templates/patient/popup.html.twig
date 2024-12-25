@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rendez-vous confirmé{% endblock %}
+
+{% block body %}
+<div class="popup-container">
+    <div class="popup-card">
+        <h1 class="popup-title">Rendez-vous fixé avec succès !</h1>
+        <p class="popup-message">Merci de nous faire confiance. Votre rendez-vous a bien été enregistré.</p>
+        <a href="{{ path('app_default') }}" class="btn btn-success btn-home">Retour à l'accueil</a>
+    </div>
+</div>
+
+
+{% endblock %}
